@@ -1,0 +1,131 @@
+#mainLayout {
+
+  min-width: 1400px;
+  margin:0 auto;
+  box-sizing: content-box;
+  overflow:visible;
+
+    .gsheader__banner {
+      max-width: 1560px;
+      height:70px;
+      margin:0 auto;
+      display: block;
+      text-align: center;
+    }
+
+    .gsheader__help {
+      max-width:1560px;
+      height:40px;
+      margin:0 auto;
+      background-color:var(--white);
+
+        .help {
+          position:relative;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+
+          li {
+            display: flex;
+            align-items: center;
+            font-size:1.2rem;
+            font-weight: 300;
+
+            &:first-child {
+              padding-right:4rem;
+            }
+
+            &::before {
+              content:'';
+              display: block;
+              position:absolute;
+              //top:3px;
+              width:1px;
+              height:12px;
+              background-color:var(--black600);
+            }
+          }
+          
+          a {
+            margin:1rem;
+          }
+
+        }
+        
+    }
+
+    .gsheader__main {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1560px;
+      height:70px;
+      margin:0 auto;
+      
+      h1 {
+        font-size:1.6rem;
+
+      }
+
+      .header__search {
+        font-size:1.2rem;
+      }
+
+      .header__check {
+        ul {
+          display:flex;
+
+          li {
+            display: flex;
+            margin: 1rem;
+
+            div {
+              text-align:center;
+            }
+
+            svg {
+              width:2.4rem;
+              height:2.4rem;
+              margin:0 auto;
+            }
+          }
+        }
+      }
+    }
+
+    .gsheader__nav {
+      max-width:1560px;
+      //height:54px;
+      margin:0 auto;
+
+        .header__menu {
+            .menu {
+              display:flex;
+              justify-content: space-between;
+
+                svg {
+                  width:2rem;
+                  height:2rem;
+                }
+
+                li {
+                  font-size: 1.4rem;
+
+                    &.active a {
+                      color:var(--green);
+                    }
+
+                  a {
+                    display: flex;
+                    
+                      &:hover {
+                        color:var(--green);
+                      
+                      }
+                  }
+
+                }
+            }
+        }
+    }
+}

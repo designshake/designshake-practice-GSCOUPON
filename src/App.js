@@ -12,11 +12,17 @@ import Oil from './page/Oil';
 import Culture from './page/Culture';
 import Eat from './page/Eat';
 import Delivery from './page/Delivery';
+import Not from './page/Not';
 
+import Header from './components/section/Header';
+import Footer from './components/section/Footer';
+import Main from './components/section/Main';
 
 function App() {
   return (
     <BrowserRouter>
+      <Header />
+      <Main>
       <Routes>
         <Route path='/' element={<Specialcoffee/>} />
         <Route path='/coffee' element={<Coffee/>} />
@@ -28,7 +34,11 @@ function App() {
         <Route path='/culture' element={<Culture/>} />
         <Route path='/eat' element={<Eat/>} />
         <Route path='/delivery' element={<Delivery/>} />
+        <Route pate='*' element={<Not />} />
       </Routes>
+      </Main>
+      
+      <Footer />
     </BrowserRouter>
   );
 }
