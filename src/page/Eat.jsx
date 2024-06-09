@@ -1,8 +1,11 @@
 import React from 'react'
+import Main from '../components/section/Main'
 
 const Eat = () => {
   return (
-    <div>Eat</div>
+    <Main>
+      외식
+    </Main>
   )
 }
 

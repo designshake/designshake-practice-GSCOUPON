@@ -1,8 +1,11 @@
 import React from 'react'
+import Main from '../components/section/Main'
 
 const Mart = () => {
   return (
-    <div>마트/편의점</div>
+   <Main>
+    마트
+   </Main>
   )
 }
 

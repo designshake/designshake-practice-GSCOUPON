@@ -1,8 +1,11 @@
 import React from 'react'
+import Main from '../components/section/Main'
 
 const Oil = () => {
   return (
-    <div>Oil</div>
+    <Main>
+      Oil
+    </Main>
   )
 }
 

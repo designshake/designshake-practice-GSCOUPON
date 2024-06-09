@@ -1,12 +1,12 @@
 import React from 'react'
 import Main from '../components/section/Main'
 
-const Coffee = () => {
+const Pay = () => {
   return (
-    <Main>
-      Coffee
-    </Main>
+   <Main>
+    Pay
+   </Main>
   )
 }
 
-export default Coffee
+export default Pay

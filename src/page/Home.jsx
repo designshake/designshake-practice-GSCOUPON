@@ -1,12 +1,12 @@
 import React from 'react'
 import Main from '../components/section/Main'
 
-const Coffee = () => {
+const Home = () => {
   return (
     <Main>
-      Coffee
+      main
     </Main>
   )
 }
 
-export default Coffee
+export default Home

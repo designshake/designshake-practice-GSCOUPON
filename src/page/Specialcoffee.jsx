@@ -1,8 +1,11 @@
 import React from 'react'
+import Main from '../components/section/Main'
 
 const Specialcoffee = () => {
   return (
-    <div>초특가Coffee</div>
+    <Main>
+      초저가ZERO커피
+    </Main>
   )
 }
 

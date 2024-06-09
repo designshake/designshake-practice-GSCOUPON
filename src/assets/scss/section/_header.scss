@@ -11,6 +11,7 @@
       margin:0 auto;
       display: block;
       text-align: center;
+      padding:0 1rem;
     }
 
     .gsheader__help {
@@ -69,6 +70,17 @@
 
       .header__search {
         font-size:1.2rem;
+
+          .search__input {
+            width:60rem;
+            height:4rem;
+            background-color:var(--white);
+            border:1px solid var(--black500);
+            border-radius:20px;
+            padding:1rem 1rem 1rem 4rem;
+            font-size:1.4rem;
+            font-weight: 200;
+          }
       }
 
       .header__check {
@@ -100,7 +112,7 @@
         .header__menu {
             .menu {
               display:flex;
-              justify-content: space-between;
+              justify-content: space-around;
 
                 svg {
                   width:2rem;

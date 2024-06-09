@@ -1,8 +1,11 @@
 import React from 'react'
+import Main from '../components/section/Main'
 
 const Delivery = () => {
   return (
-    <div>배송</div>
+    <Main>
+      배달
+    </Main>
   )
 }
 
