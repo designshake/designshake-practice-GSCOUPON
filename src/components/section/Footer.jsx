@@ -1,11 +1,19 @@
 import React from 'react'
 
+import Company from '../footer/Company'
+import Bank from '../footer/Bank'
+import Cs from '../footer/Cs'
+
 const Footer = () => {
   return (
     <footer id='footer' role='contentinfo'>
-      <div className='company__info'>companyInfo</div>
-      <div bank__info>bankInfo</div>
-      <div cs__center>csCenter</div>
+      <>
+        <div className='footer__wrap'>
+          <Company />
+          <Bank />
+          <Cs />
+        </div>
+      </>
     </footer>
   )
 }
