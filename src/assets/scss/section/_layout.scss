@@ -11,10 +11,13 @@
 }
 
 #main {
+  width:1560px;
   min-width:1440px;
   min-height:100vh;
-  background-color: #d0ff73;
+  background-color: #ebebeb;
   color:var(--black100);
+  margin:0 auto;
+
 }
 
 #footer {
@@ -29,6 +32,7 @@
 //mainLayout
 
 .content__wrap {
+  width:1560px;
   display:flex;
   margin:0 auto;
   justify-content: center;
@@ -37,13 +41,13 @@
   .left {
     background: #d1dabf;
     width:1180px;
-    height:100vh;
+    //height:100vh;
     box-sizing: content-box;
   }
 
   .right {
     background: #5372af;
     width:380px;
-    height:100vh;
+    //height:100vh;
   }
 }

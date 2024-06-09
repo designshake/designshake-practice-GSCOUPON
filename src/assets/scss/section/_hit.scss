@@ -1,0 +1,29 @@
+#hit {
+  
+  .hit__inner {
+    display: inline-block;
+    width:270px;
+    height:370px;
+    background: #ffcc00;
+    box-sizing: border-box;
+    margin:0 0.5rem 1rem;
+
+    .hit__thumb {
+      width:270px;
+      height:270px;
+      background-color: #000;
+    }
+
+    .hit__title {}
+
+    .hit__text {
+
+        .price {}
+
+        .fixprice {}
+
+        .discount {}
+    }
+
+  }
+}

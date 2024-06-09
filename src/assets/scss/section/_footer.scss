@@ -1,5 +1,7 @@
 .footer__wrap {
+    width:1560px;
     display:flex;
+    margin:0 auto;
     text-align: left;
 
     .company__info {
@@ -59,16 +61,16 @@
       width:25%;
       box-sizing: border-box;
 
-       p:nth-child(1) {
-        font-size:1.4rem;
-        margin-bottom: 1rem;
-       }
+        p:nth-child(1) {
+          font-size:1.4rem;
+          margin-bottom: 1rem;
+        }
 
-       p:nth-child(2) {
-        font-size:2rem;
-        font-weight: 400;
-        padding-bottom:2rem;
-       }
+        p:nth-child(2) {
+          font-size:2rem;
+          font-weight: 400;
+          padding-bottom:2rem;
+        }
     }
 }
 
