@@ -25,3 +25,25 @@
   text-align: center;
   color:var(--black500);
 }
+
+//mainLayout
+
+.content__wrap {
+  display:flex;
+  margin:0 auto;
+  justify-content: center;
+  padding:4rem 4rem 2rem 0;
+
+  .left {
+    background: #d1dabf;
+    width:1180px;
+    height:100vh;
+    box-sizing: content-box;
+  }
+
+  .right {
+    background: #5372af;
+    width:380px;
+    height:100vh;
+  }
+}
