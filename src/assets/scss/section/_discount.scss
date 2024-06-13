@@ -1,0 +1,76 @@
+#discount {
+  padding:1rem 1rem;
+
+  .index__title {
+    font-size:2.4rem;
+    font-weight:300;
+    padding-bottom:1.3rem;
+    padding-left:1.3rem;
+    letter-spacing:-1px;
+  }
+
+  .discount__inner {
+    display: inline-block;
+    width:210px;
+    height:310px;
+    box-sizing: border-box;
+    margin:0 0.5rem 1rem;
+
+      .discount__thumb {
+        position: relative;
+        width:210px;
+        height:230px;
+        border-radius:20px;
+        border:1px solid var(--black500);
+  
+          img {
+            border-radius:20px;
+          }
+
+          .discount__wrap {
+            position:absolute;
+
+              .tag__special {
+                  display:inline-block;
+                  padding:0.4rem 1.1rem;
+                  background-color: var(--red2);
+                  border-radius: 3rem;
+                  font-size:1.2rem;
+                  font-weight:300;
+                  color:var(--white);
+                }
+
+          }
+      }
+
+      .discount__title {
+        font-size:1.4rem;
+        font-weight:300;
+      }
+
+      .discount__text {
+
+        span {
+          display:inline-block;
+          margin-right:10px;
+          }
+
+          .price {
+            font-size:1.6rem;
+          }
+
+          .fixprice {
+            font-size: 1.4rem;
+            color:var(--black400);
+            font-weight:300;
+            text-decoration-line: line-through;
+          }
+
+          .discount {
+            color:var(--red);
+            font-size:1.4rem;
+          }
+      }
+  }
+
+}

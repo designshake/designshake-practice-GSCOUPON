@@ -4,7 +4,6 @@ import Logininfo from './Logininfo'
 import Mainbanner from './Mainbanner'
 import Hit from './Hit'
 import Discount from './Discount'
-import Evt from './Evt'
 import News from './News'
 import Banner from './Banner'
 
@@ -16,7 +15,6 @@ const Layout = () => {
             <Mainbanner />
             <Hit />
             <Banner />
-            <Evt/>
             <Discount />
             <News />
         </div>

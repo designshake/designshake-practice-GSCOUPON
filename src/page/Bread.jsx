@@ -4,7 +4,7 @@ import Main from '../components/section/Main'
 const Bread = () => {
   return (
     <Main>
-      Bread
+      BreadSSSSS
     </Main>
   )
 }

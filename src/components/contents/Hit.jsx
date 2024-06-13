@@ -1,84 +1,32 @@
 import React from 'react'
 
+import { Link } from 'react-router-dom'
+import { hitText } from '../../data/hit'
+
+
 const Hit = () => {
   return (
     <section id='hit'>
-      <h2 className='title'>지금 가장 많이 구매해요!</h2>
-      <div className='hit__inner'>
-        <div className='hit__thumb'>사진이미지</div>
-        <div className='hit__title'>[스타벅스]아이스 카페 아메리카노 Tall</div>
+      <h2 className='index__title'>지금 <span className='green__text'>가장 많이</span> 구매해요!</h2>
+      {hitText.map ((hit, key)=> (
+        <div className='hit__inner' key={key}>
+        <div className='hit__thumb'>
+            <div className='tag__wrap'>
+              <div className='tag__date'>60일</div>
+              <div className='tag__special'>특가</div>
+            </div>
+            <Link to={hit.page}>
+              <img src={hit.img} alt={hit.desc}></img>
+            </Link>
+        </div>
+        <div className='hit__title'>{hit.title}</div>
         <div className='hit__text'>
-          <span className='price'>5,600원</span>
-          <span className='fixprice'>3,500원</span>
-          <span className='discount'>[-13%]</span>
+          <span className='price'>{hit.price}</span>
+          <span className='fixprice'>{hit.fixprice}</span>
+          <span className='discount'>{hit.discount}</span>
         </div>
       </div>
-
-      <div className='hit__inner'>
-        <div className='hit__thumb'>사진이미지</div>
-        <div className='hit__title'>[스타벅스]아이스 카페 아메리카노 Tall</div>
-        <div className='hit__text'>
-          <span className='price'>5,600원</span>
-          <span className='fixprice'>3,500원</span>
-          <span className='discount'>[-13%]</span>
-        </div>
-      </div>
-
-      <div className='hit__inner'>
-        <div className='hit__thumb'>사진이미지</div>
-        <div className='hit__title'>[스타벅스]아이스 카페 아메리카노 Tall</div>
-        <div className='hit__text'>
-          <span className='price'>5,600원</span>
-          <span className='fixprice'>3,500원</span>
-          <span className='discount'>[-13%]</span>
-        </div>
-      </div>
-
-      <div className='hit__inner'>
-        <div className='hit__thumb'>사진이미지</div>
-        <div className='hit__title'>[스타벅스]아이스 카페 아메리카노 Tall</div>
-        <div className='hit__text'>
-          <span className='price'>5,600원</span>
-          <span className='fixprice'>3,500원</span>
-          <span className='discount'>[-13%]</span>
-        </div>
-      </div>
-      <div className='hit__inner'>
-        <div className='hit__thumb'>사진이미지</div>
-        <div className='hit__title'>[스타벅스]아이스 카페 아메리카노 Tall</div>
-        <div className='hit__text'>
-          <span className='price'>5,600원</span>
-          <span className='fixprice'>3,500원</span>
-          <span className='discount'>[-13%]</span>
-        </div>
-      </div>
-      <div className='hit__inner'>
-        <div className='hit__thumb'>사진이미지</div>
-        <div className='hit__title'>[스타벅스]아이스 카페 아메리카노 Tall</div>
-        <div className='hit__text'>
-          <span className='price'>5,600원</span>
-          <span className='fixprice'>3,500원</span>
-          <span className='discount'>[-13%]</span>
-        </div>
-      </div>
-      <div className='hit__inner'>
-        <div className='hit__thumb'>사진이미지</div>
-        <div className='hit__title'>[스타벅스]아이스 카페 아메리카노 Tall</div>
-        <div className='hit__text'>
-          <span className='price'>5,600원</span>
-          <span className='fixprice'>3,500원</span>
-          <span className='discount'>[-13%]</span>
-        </div>
-      </div>
-      <div className='hit__inner'>
-        <div className='hit__thumb'>사진이미지</div>
-        <div className='hit__title'>[스타벅스]아이스 카페 아메리카노 Tall</div>
-        <div className='hit__text'>
-          <span className='price'>5,600원</span>
-          <span className='fixprice'>3,500원</span>
-          <span className='discount'>[-13%]</span>
-        </div>
-      </div>
+      ))}
     </section>
   )
 }

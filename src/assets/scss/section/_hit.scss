@@ -1,28 +1,94 @@
 #hit {
+
+  .index__title {
+    font-size:2.4rem;
+    font-weight:300;
+    padding-bottom:1.3rem;
+    padding-left:1.3rem;
+    letter-spacing:-1px;
+
+      .green__text {
+        color:var(--green);
+        font-weight:600;
+      }
+  }
   
   .hit__inner {
     display: inline-block;
     width:270px;
     height:370px;
-    background: #ffcc00;
     box-sizing: border-box;
-    margin:0 0.5rem 1rem;
+    margin:0 0.85rem 1rem;
 
     .hit__thumb {
+      position: relative;
       width:270px;
       height:270px;
-      background-color: #000;
+      border-radius:20px;
+      border:1px solid var(--black500);
+
+        img {
+          border-radius:20px;
+        }
+
+        .tag__wrap {
+          position:absolute;
+          display: flex;
+          justify-content: space-between;
+          padding:1.5rem 1.5rem;
+          width:100%;
+
+            .tag__date {
+              display:inline-block;
+              padding:0.4rem 1.1rem;
+              background-color: var(--yellow);
+              border-radius: 3rem;
+              font-size:1.2rem;
+              font-weight:300;
+              color:var(--black100);
+            }
+
+            .tag__special {
+              display:inline-block;
+              padding:0.4rem 1.1rem;
+              background-color: var(--red2);
+              border-radius: 3rem;
+              font-size:1.2rem;
+              font-weight:300;
+              color:var(--white);
+            }     
+        }
     }
 
-    .hit__title {}
+    .hit__title {
+      font-size:1.6rem;
+      letter-spacing: -1px;
+      padding-bottom:2rem;
+      padding-top:1rem;
+    }
 
     .hit__text {
+        span {
+          display:inline-block;
+          margin-right:10px;
+        }
 
-        .price {}
+        .price {
+          font-size:1.6rem;
+        }
 
-        .fixprice {}
+        .fixprice {
+          font-size: 1.6rem;
+          color:var(--black400);
+          font-weight:300;
+          text-decoration-line: line-through;
+        }
 
-        .discount {}
+        .discount {
+          color:var(--red);
+          font-size:1.6rem;
+
+        }
     }
 
   }
