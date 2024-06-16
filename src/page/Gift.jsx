@@ -4,7 +4,7 @@ import Main from '../components/section/Main'
 const Gift = () => {
   return (
     <Main>
-      Gift상품권
+      page Gift상품권
     </Main>
   )
 }

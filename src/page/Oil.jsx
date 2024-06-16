@@ -4,7 +4,7 @@ import Main from '../components/section/Main'
 const Oil = () => {
   return (
     <Main>
-      Oil
+      page Oil
     </Main>
   )
 }

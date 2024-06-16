@@ -4,7 +4,7 @@ import Main from '../components/section/Main'
 const Culture = () => {
   return (
     <Main>
-      Culture
+      page Culture
     </Main>
   )
 }

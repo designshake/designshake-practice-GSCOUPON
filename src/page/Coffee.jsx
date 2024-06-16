@@ -4,7 +4,7 @@ import Main from '../components/section/Main'
 const Coffee = () => {
   return (
     <Main>
-      Coffee
+      Page Coffee
     </Main>
   )
 }

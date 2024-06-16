@@ -4,15 +4,16 @@
   top:0;
   left:0;
   right:0;
-  min-width:1440px;
+  width:100%;
+  min-width:1560px;
   height:211px;
   background-color: var(--white);
   z-index: 1000;
 }
 
 #main {
-  width:1560px;
-  min-width:1440px;
+  width:100%;
+  min-width:1560px;
   min-height:100vh;
   background-color: #ebebeb;
   color:var(--black100);
@@ -22,6 +23,7 @@
 
 #footer {
   width:100%;
+  min-width:1560px;
   height:210px;
   display:inline-block;
   background-color: var(--black100);

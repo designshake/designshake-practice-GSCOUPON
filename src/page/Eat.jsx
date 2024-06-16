@@ -4,7 +4,7 @@ import Main from '../components/section/Main'
 const Eat = () => {
   return (
     <Main>
-      외식
+      page 외식
     </Main>
   )
 }

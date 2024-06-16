@@ -4,7 +4,7 @@ import Main from '../components/section/Main'
 const Mart = () => {
   return (
    <Main>
-    마트
+    page 마트
    </Main>
   )
 }

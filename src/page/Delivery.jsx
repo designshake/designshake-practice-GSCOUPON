@@ -4,7 +4,7 @@ import Main from '../components/section/Main'
 const Delivery = () => {
   return (
     <Main>
-      배달
+      page 배달
     </Main>
   )
 }
