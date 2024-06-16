@@ -48,8 +48,10 @@
   }
 
   .right {
-    background: #5372af;
+    background-color: var(--white);
     width:380px;
+    border-left:1px solid var(--grayddd);
+    padding:1rem 0 1rem 4rem;
     //height:100vh;
   }
 }
