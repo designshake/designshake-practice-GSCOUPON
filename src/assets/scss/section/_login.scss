@@ -1,0 +1,37 @@
+
+#login {
+
+  h2 {
+    display: inline-block;
+    font-weight:400;
+    font-size:2rem;
+    padding:6rem 0 2rem;
+  }
+  
+  .btn__wrap {
+    padding-bottom:4rem;
+    border-bottom:1px solid var(--grayddd);
+    margin-bottom:5.3rem;
+  
+     button {
+      width:16rem;
+      height:4.8rem;
+      background-color: var(--white);
+      border:1px solid var(--grayddd);
+      text-align: center;
+      border-radius: 5px;
+      font-weight: 300;
+      font-size:1.4rem;
+  
+        &:first-child {
+          margin-right:0.5rem;
+        }
+  
+        &:hover {
+          border:1px solid var(--black);
+          transition: all 0.3s;
+        }
+     }
+  }
+}
+
