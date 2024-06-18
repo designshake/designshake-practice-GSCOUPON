@@ -66,7 +66,6 @@
   .download__wrap {
     overflow:hidden;
     width:30.3rem;
-    background-color: #ff0000;
 
       .list__wrap {
 
@@ -76,15 +75,70 @@
           justify-content: center;
   
           li {
-            width:100px;
-            height:100px;
+            width:87px;
+            height:103px;
             padding:1rem;
             text-align: center;
-            background:#ffcc00;
-            border:1px solid #000;
             margin-bottom:2rem;
+
+              div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin:0 auto 10px;
+
+                  img {
+                    width:35px;
+                    height:35px;
+                    object-fit: contain;
+                  }
+              }
+              p {
+                font-size:1.4rem;
+                font-weight: 400;
+                letter-spacing: -0.5px;
+                line-height: 1.5rem;
+                white-space: pre-wrap;
+
+                  &:hover {
+                    color:var(--green);
+                    transition: all 0.3s;
+                  }
+              }
           }
         }   
       }
     }
   }
+
+#youtube {
+  margin-top:4rem;
+
+  .youtube__inner {
+
+      .youtube__thumb {
+        position: relative;
+        border:1px solid var(--grayddd);
+        border-radius: 3px;
+
+          &:hover {
+
+            .logo {
+              opacity: 0;
+              transition:all 0.3s;
+            }
+          }
+
+          .logo {
+            display:block;
+            width:80px;
+            height:56px;
+            position:absolute;
+            top: 50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+          }
+      }
+  }
+  
+}
