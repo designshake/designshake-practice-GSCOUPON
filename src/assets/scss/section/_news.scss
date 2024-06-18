@@ -1,6 +1,6 @@
 
 #news {
-  padding:1rem 1rem 5rem;
+  padding:5rem 1rem 5rem;
 
     .header__wrap {
       display:flex;
@@ -22,18 +22,18 @@
 
   .news__wrap {
     display:inline-block;
+    height:5.8rem;
     padding:1.2rem 1.2rem;
     border-bottom:1px solid var(--blackddd);
     animation:move 3s infinite;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
 
       &:hover {
         background-color: var(--black500);
         transition:all 0.3s;
         } 
-  
-    padding:1rem 1rem;
-    display:flex;
-    justify-content: space-between;
 
     .news__title{
       font-size:1.6rem;

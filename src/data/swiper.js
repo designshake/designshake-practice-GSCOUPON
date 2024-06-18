@@ -5,7 +5,7 @@ import imgViewer04 from '../assets/img/gstopbanner/imgViewer04.jpg';
 import imgViewer05 from '../assets/img/gstopbanner/imgViewer05.jpg';
 import imgViewer06 from '../assets/img/gstopbanner/imgViewer06.jpg';
 
-export const mainbannerText=[
+export const swiperText=[
   {
     img:imgViewer01,
     title:"사이트리뉴얼 스타벅스 15% 할인",

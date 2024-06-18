@@ -1,5 +1,5 @@
 #discount {
-  padding:1rem 1rem;
+  padding:6.3rem 1rem 1rem;
 
   .index__title {
     font-size:2.4rem;
@@ -7,14 +7,19 @@
     padding-bottom:1.3rem;
     padding-left:1.3rem;
     letter-spacing:-1px;
+
+      .green__text {
+        color:var(--green);
+        font-weight:600;
+      }
   }
 
   .discount__inner {
     display: inline-block;
-    width:210px;
-    height:310px;
+    width:21.3rem;
+    height:30.7rem;
     box-sizing: border-box;
-    margin:0 0.5rem 1rem;
+    margin:0 auto;
 
       .discount__thumb {
         position: relative;
@@ -30,6 +35,7 @@
 
           .discount__wrap {
             position:absolute;
+            right:20px;
 
               .tag__special {
                   display:inline-block;
@@ -75,3 +81,22 @@
   }
 
 }
+
+//swiper
+.swiper-wrapper {
+  text-align:center;
+  margin:0 auto;
+}
+
+.swiper-button-next:after {
+  font-size: 20px;
+  color:var(--black);
+  font-weight:300;
+}
+
+.swiper-button-prev:after {
+  font-size: 20px;
+  color: var(--black);
+  font-weight:300;
+}
+

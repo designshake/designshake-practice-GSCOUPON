@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const Middelbanner = () => {
   return (
     <>
-      <section>
+      <section id='rightbanner'>
         {middlebannerText.map((middlebanner, key) => (
           <div key={key}>
             <Link to={middlebanner.page}>

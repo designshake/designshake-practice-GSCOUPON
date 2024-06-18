@@ -6,9 +6,10 @@
   right:0;
   width:100%;
   min-width:1560px;
-  height:211px;
+  height:310px;
   background-color: var(--white);
   z-index: 1000;
+  background-color: #5710ca;
 }
 
 #main {
@@ -38,7 +39,7 @@
   display:flex;
   margin:0 auto;
   justify-content: center;
-  padding:4rem 4rem 2rem 0;
+  padding:0 4rem 2rem 0;
 
   .left {
     background:var(--white);
@@ -49,9 +50,9 @@
 
   .right {
     background-color: var(--white);
-    width:380px;
+    width:382px;
     border-left:1px solid var(--grayddd);
-    padding:1rem 0 1rem 4rem;
+    padding:1rem 0 1rem 4.3rem;
     //height:100vh;
   }
 }

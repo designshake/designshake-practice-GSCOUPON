@@ -1,36 +1,45 @@
 import React  from 'react'
+import { swiperText } from '../../data/swiper'
+import { Link } from 'react-router-dom'
 
-import imgViewer01 from '../../assets/img/gstopbanner/imgViewer01.jpg'
-// import imgViewer02 from '../../assets/img/gstopbanner/imgViewer02.jpg'
-// import imgViewer03 from '../../assets/img/gstopbanner/imgViewer03.jpg'
-// import imgViewer04 from '../../assets/img/gstopbanner/imgViewer04.jpg'
-// import imgViewer05 from '../../assets/img/gstopbanner/imgViewer05.jpg'
-// import imgViewer06 from '../../assets/img/gstopbanner/imgViewer06.jpg'
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 const Mainbanner = () => {
   return (
     <>
       <section id='main__banner'>
-          <ul className='banner__wrap'>
-            <li>
-                <img src={imgViewer01} alt=''/>
-            </li>
-            {/* <li>
-                <img src={imgViewer02} alt=''/>
-            </li>
-            <li>
-                <img src={imgViewer03} alt=''/>
-            </li>
-            <li>
-                <img src={imgViewer04} alt=''/>
-            </li>
-            <li>
-                <img src={imgViewer05} alt=''/>
-            </li>
-            <li>
-                <img src={imgViewer06} alt=''/>
-            </li> */}
-          </ul>
+        <div className='banner__inner'>
+          <Swiper
+            spaceBetween={30}
+            centeredSlides={true}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            pagination={{
+              clickable: true,
+            }}
+            navigation={true}
+            modules={[Autoplay, Pagination, Navigation]}
+            className="mySwiper"
+          >
+            {swiperText.map ((swiper, key) => (
+              <SwiperSlide>
+                <div className='mainbanner'>
+                  <Link to={'swiper.page'}>
+                    <img src={swiper.img} alt={swiper.title}/>
+                  </Link>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
       </section>
     </>
   )

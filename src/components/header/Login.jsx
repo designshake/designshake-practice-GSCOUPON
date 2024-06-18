@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Login = () => {
   return (
@@ -6,16 +7,16 @@ const Login = () => {
       <div className='gsheader__help'>
             <ul className='help'>
                <li>
-                  <a href='/'>GS&쿠폰 처음이세요?</a>
+                  <Link to={'/'}>GS&쿠폰 처음이세요?</Link>
                </li>
                <li>
-                  <a href='/'>회원가입</a>
+                  <Link to={'/'}>회원가입</Link>
                </li>
                <li>
-                  <a href='/'>로그인</a>
+                  <Link to={'/'}>로그인</Link>
                </li>
                <li>
-                  <a href='/'>고객센타</a>
+                  <Link to={'/'}>고객센타</Link>
                </li>
             </ul>
          </div>
