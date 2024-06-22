@@ -1,0 +1,192 @@
+//Coffee.jsx
+#coffee {
+  width:113.0rem;
+  background:var(--white);
+  margin:0 auto;
+  //height:100vh;
+
+    h2 {
+      font-size:4rem;
+      font-weight:600;
+      text-align:center;
+    }
+}
+
+#sublist {
+
+    .font__wrap {
+        display:flex;
+        justify-content: space-between;
+        padding:0 0 1.2rem 0;
+        
+        .title {
+          font-size:1.6rem;
+
+            span {
+              color:var(--red);
+            }
+        }
+
+      .font__lsit {
+       
+          ul {
+            display:flex;
+            font-size:1.4rem;
+            font-weight:300;
+
+              li {
+                margin:0 1rem;
+              }
+
+              .on::after {
+                content:'';
+                position:relative;
+                top:-10px;
+                display:inline-block;
+                width:100%;
+                height:0.2rem;
+                background-color: var(--green2);
+              }
+          }
+      }
+
+    }
+
+    .sublist__inner {
+      display: flex;
+      flex-wrap:wrap;
+      justify-content: space-between;
+      //margin:0 0.4rem 0 0;
+
+        .sublist__box {
+          width:27rem;
+          height:34.5rem;
+          box-sizing: border-box;
+          margin:0 1.1rem 2rem 0;
+          background-color:var(--white);
+
+            &:hover {
+              border-color:var(--green);
+              transition:all 0.3s;
+            }
+
+          
+            .sublist__thumb {
+              position:relative;
+              display:flex;
+              align-items: center;
+              box-sizing: border-box;
+              width:27rem;
+              height:27rem;
+              border-radius: 1rem 1rem;
+              border:1px solid var(--grayddd);
+              overflow: hidden;
+
+                &:hover {
+                  border-color:var(--green);
+                  transition:all 0.3s;
+                }
+
+                .tag__wrap {
+                  z-index:10000;
+                  position:absolute;
+                  top:0;
+                  display: flex;
+                  justify-content: space-between;
+                  padding:1.5rem 1.5rem;
+                  width:100%;
+    
+                  .tag__date {
+                    display:inline-block;
+                    padding:0.4rem 1.1rem;
+                    background-color: var(--yellow);
+                    border-radius: 3rem;
+                    font-size:1.2rem;
+                    font-weight:300;
+                    color:var(--black100);
+                  }
+    
+                  .tag__special {
+                    display:inline-block;
+                    padding:0.4rem 1.1rem;
+                    background-color: var(--red2);
+                    border-radius: 3rem;
+                    font-size:1.2rem;
+                    font-weight:300;
+                    color:var(--white);
+                  } 
+    
+                }
+            }
+            .sublist__text {
+
+              p {
+                font-size:1.4rem;
+                font-weight:300;
+                font-size: 1.6rem;
+                letter-spacing: -1px;
+              }
+
+              .sublist__group {
+                padding-top:1rem;
+
+                  span {
+                    display: inline-block;
+                    font-size:1.4rem;
+                    font-weight:300;
+                    padding-right:1rem;
+                  }
+                  
+                  .txt__gray {
+                    color:var(--grayddd);
+                    font-weight: 300;
+                    text-decoration: line-through;
+                    font-size:1.6rem;
+                  }
+                  
+                  .txt__price {
+                    font-size:1.6rem;
+                  }
+                  .txt__red {
+                    color:var(--red);
+                    font-weight:500;
+                    font-size:1.6rem;
+                  }
+              }
+            }
+        }
+    }
+}
+
+#pagenumbers {
+  padding:4rem 0 10rem 0;
+
+  .pagination {
+
+      ul {
+        display: flex;
+        justify-content: center;
+
+          li {
+            width:3rem;
+            height:3rem;
+            border-radius:50%;
+            border:1px solid var(--grayddd);
+            margin:0 1rem;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+
+              &:hover {
+                background-color: var(--green2);
+                color:var(--white);
+              }
+          }
+
+            .on {
+              background-color: var(--green2);
+              color:var(--white);
+            }
+      }
+    }
+  }

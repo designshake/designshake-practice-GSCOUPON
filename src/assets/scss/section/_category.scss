@@ -1,0 +1,106 @@
+#category {
+
+  margin-bottom: 6.2rem;
+
+    .category__wrap {
+      position:relative;
+      display: flex;
+      border-radius:1rem 1rem;
+      border: 1px solid var(--grayddd);
+      background-color: var(--white);
+      margin-top:4.5rem;
+
+      .brand{
+        box-sizing: border-box;
+        width:68rem;
+        height:50.6rem;
+
+          .headerleft {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background:var(--gray666);
+            color:var(--white);
+            width:100%;
+            height:5.5rem;
+            border-radius: 1rem 0 0 0;
+            border-right:1px solid var(--black100);
+            font-size:1.4rem;
+            padding:1rem 1rem;
+          }
+
+          .brand__box {
+            //background-color:aqua;
+            padding:1.5rem 1.5rem;
+            overflow-y: auto;
+            box-sizing: border-box;
+            border-right:1px solid var(--grayddd);
+            height:45rem;
+            border-radius: 0 0 0 1rem;
+
+              .brand__inner {
+                display:flex;
+                flex-wrap:wrap;
+                margin:0.5rem 0.5rem;
+
+                  .box {
+                    width:14.4rem;
+                    height:13rem;
+                    box-sizing: border-box;
+                    border:1px solid var(--grayddd);
+                    border-radius: 1rem 1rem;
+                    padding:1.5rem 1.5rem;
+                    margin:0.5rem 0.5rem;
+
+                      .center {
+                        display:flex;
+                        align-items: center;
+                        justify-content: center;
+                      }
+
+                      &:hover {
+                        //border-color:var(--green);
+                        border:1px solid var(--green);
+                        transition: all 0.3s;
+                      }
+
+                      p {
+                        width:8rem;
+                        height:8rem;
+                        margin:0 auto;
+                      }
+
+                      span {
+                        display:flex;
+                        justify-content: center;
+                        font-size:1.2rem;
+                        line-height:1.4rem;
+                        font-weight:300;
+                        
+                      }
+                  }
+              }
+          }
+      }
+      
+      .search{
+        box-sizing: border-box;
+        width:45rem;
+        height:50.6rem;
+
+          .headerright {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background:var(--gray666);
+            color:var(--white);
+            width:100%;
+            height:5.5rem;
+            border-radius: 0 1rem 0 0;
+            font-size:1.4rem;
+            padding:1rem 1rem;
+          }
+      }
+    }
+
+}

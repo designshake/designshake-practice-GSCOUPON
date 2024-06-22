@@ -14,7 +14,7 @@ const Menulist = () => {
                   <li key={key}>
                     <Link to={'/'}>
                       <div>
-                        <img src={menulist.img} />
+                        <img src={menulist.img}  alt={menulist.desc}/>
                       </div>
                         <p>{menulist.title}</p>
                     </Link>

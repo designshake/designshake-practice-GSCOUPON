@@ -9,14 +9,14 @@
   height:310px;
   background-color: var(--white);
   z-index: 1000;
-  background-color: #5710ca;
+  background-color:var(--white)
 }
 
 #main {
   width:100%;
   min-width:1560px;
   min-height:100vh;
-  background-color: #ebebeb;
+  background-color:var(--white);
   color:var(--black100);
   margin:0 auto;
 
