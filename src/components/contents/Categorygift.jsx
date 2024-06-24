@@ -1,12 +1,11 @@
 import React from 'react'
-
 import Form from 'react-bootstrap/Form';
 
-import { coffeelogoText } from '../../data/coffeecategory'
-import { Link } from 'react-router-dom'
 
-const Categorycoffee = () => {
-  
+import { Link } from 'react-router-dom'
+import { giftText } from '../../data/giftcategroy';
+
+const Categorygift = () => {
   return (
     <>
       <section id='category'>
@@ -18,13 +17,13 @@ const Categorycoffee = () => {
                   <div className='box'>
                     <p className='center'>전체선택</p>
                   </div>
-                  {coffeelogoText.map((coffeelogo, key) => (
-                    <Link to={coffeelogo.page}>
+                  {giftText.map((gift, key) => (
+                    <Link to={gift.page}>
                       <div className='box' key={key}>
                         <p>
-                          <img src={coffeelogo.img} alt={coffeelogo.desc} />
+                          <img src={gift.img} alt={gift.desc} />
                           </p>
-                        <span>{coffeelogo.title}</span>
+                        <span>{gift.title}</span>
                       </div>
                     </Link>  
                    ))}
@@ -118,4 +117,4 @@ const Categorycoffee = () => {
   )
 }
 
-export default Categorycoffee
+export default Categorygift

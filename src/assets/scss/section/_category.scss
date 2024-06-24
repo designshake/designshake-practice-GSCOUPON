@@ -13,7 +13,7 @@
       .brand{
         box-sizing: border-box;
         width:68rem;
-        height:50.6rem;
+        //height:50.6rem;
 
           .headerleft {
             display: flex;
@@ -35,7 +35,7 @@
             overflow-y: auto;
             box-sizing: border-box;
             border-right:1px solid var(--grayddd);
-            height:45rem;
+            //height:45rem;
             border-radius: 0 0 0 1rem;
 
               .brand__inner {
@@ -84,9 +84,14 @@
       }
       
       .search{
+
+          .search__box {
+            padding:2.5rem 2.5rem;
+          }
+
         box-sizing: border-box;
         width:45rem;
-        height:50.6rem;
+       // height:50.6rem;
 
           .headerright {
             display: flex;
@@ -103,4 +108,108 @@
       }
     }
 
+}
+
+//radio
+.mb-3 {
+  display: flex;
+  flex-wrap: wrap;
+}
+input[type=radio] { 
+  border-radius: 50%;
+  margin:0 10px 0 0;
+}
+
+input[type=radio]:checked {
+  background-color: var(--white);
+  border:1px solid var(--green);
+  
+}
+
+ .form-check-input {
+    width:20px;
+    height:20px;
+    margin:0;
+    vertical-align: top;
+    appearance: none;
+    //background-color: var(--white);
+    background-repeat: no-repeat;
+    background-position: center;
+    border:1px solid var(--grayddd);
+
+      &:checked:after{
+        content:'';
+        display:block;
+        position:relative;
+        top:4px;
+        left:4px;
+        width:10px;
+        height:10px;
+        border-radius: 50%;
+        background-color:var(--green);
+      }
+ }
+ .form-check {
+  margin:0 30px 10px 0;
+ }
+ .form-check-label {
+  font-size:1.4rem;
+  font-weight: 300;
+ }
+
+ //input
+ #input__area {
+  margin-top:2.3rem;
+
+  div {
+    margin-top:2rem;
+  }
+  
+  label {
+    font-size:1.4rem;
+    margin-right:1rem;
+  }
+
+  .search__input {
+    display: inline-block;
+    background-color: var(--white);
+    border:1px solid var(--grayddd);
+    padding:0.3rem;
+    font-weight: 300;
+    //width:13.7rem;
+    height:4rem;
+    font-size:1.4rem;
+    box-sizing: border-box;
+    border-radius: 4px;
+  
+   }
+ }
+
+//button
+#btn__wrap {
+  margin-top: 10rem;
+
+  button {
+    background-color: transparent;
+    color: var(--white);
+    font-weight: 300;
+  }
+  
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    li {
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      width:9.7rem;
+      height:4rem;
+      background-color: var(--green3);
+      text-align: center;
+      margin:0 1rem;
+      border-radius: 0.2rem;
+      
+    }
+  }
 }

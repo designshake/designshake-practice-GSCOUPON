@@ -1,10 +1,19 @@
 import React from 'react'
 import Main from '../components/section/Main'
 
+import Categorycoffee from '../components/contents/Categorycoffee'
+import Sublist from '../components/contents/Sublist'
+import Pagenumbers from '../components/contents/Pagenumbers'
+
 const Cpb = () => {
   return (
     <Main>
-      page 커피/피자/버거
+      <section id='cpb'>
+        <h2>커피/피자/버거</h2>
+        <Categorycoffee />
+        <Sublist/>
+        <Pagenumbers/>
+      </section>
     </Main>
   )
 }

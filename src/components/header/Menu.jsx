@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import { FiMenu } from "react-icons/fi";
 
+//페이지 하나로 우선 링크 걸어줌
 const Menu = () => {
   return (
     <div>

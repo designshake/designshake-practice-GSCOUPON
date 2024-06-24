@@ -1,15 +1,21 @@
 import React from 'react'
 
+import { Link } from 'react-router-dom';
+
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { LuCalculator } from "react-icons/lu";
 import { GrUser } from "react-icons/gr";
+
+import logo from '../../assets/img/gs/logo.png'
 
 const Search = () => {
   return (
     <div>
       <div className='gsheader__main'>
         <h1>
-          GS & Coupone
+          <Link to='/'>
+            <img src={logo} alt='gs쿠폰' />
+          </Link>
         </h1>
           <div className='header__search'>
             <label>

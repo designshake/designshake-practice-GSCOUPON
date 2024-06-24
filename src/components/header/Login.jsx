@@ -1,13 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { SlExclamation } from "react-icons/sl";
 
 const Login = () => {
   return (
     <>
       <div className='gsheader__help'>
             <ul className='help'>
-               <li>
-                  <Link to={'/'}>GS&쿠폰 처음이세요?</Link>
+               <li className='icon__info'>
+                  <Link to={'/'}>GS&쿠폰 처음이세요?<SlExclamation /></Link>
                </li>
                <li>
                   <Link to={'/'}>회원가입</Link>
